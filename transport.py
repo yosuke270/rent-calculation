@@ -29,7 +29,7 @@ print("補助金は", subsidy, "円です。")
 actual_rent = rent - subsidy - default_subsidy
 print(room_name, "の実負担額は", actual_rent, "円です。")
 
-#以下で、部屋の名前、家賃、居住坪数、補助金、実負担額にcsvに出力する
+#以下で、部屋の名前、家賃、居住坪数、補助金、実負担額にcsvに出力する。
 file_exists = os.path.isfile("rent.csv")
 with open("rent.csv", "a", encoding="utf-8", newline='') as f:
     writer = csv.writer(f)
